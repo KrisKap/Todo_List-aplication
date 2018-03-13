@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: sans-serif;
+  padding-top: 30px;
+  background-image: url('images/background.png');
+}
+
+.container {
+  background-color: #eee;
+  background-color: #ddd;
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid #22BA9B;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.todo-list__wrapper {
+  padding: 0 20px;
+}
+
+.todo-list__header {
+  background-color: #22BA9B;
+  padding: 20px 20px 40px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.todo-input-section {
+  display: flex;
+}
+
+.todo-input {
+  font-size: 1em;
+  flex-grow: 1;
+  padding: 10px 20px 10px 0;
+  border: 1px solid #16a085;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  text-indent: 20px;
+  background-color: #50C7AF;
+  color: #fff;
+  box-shadow:  1px 1px 1px 1px #16a085;
+}
+
+.todo-input::placeholder {
+  color: rgba(255,255,255,0.6)
+}
+
+.todo-add-btn {
+  padding: 0 10px;
+  font-size: 1em;
+  color: #16a085;
+  font-weight: bold;
+  border: 1px solid #16a085;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #fff;
+  box-shadow:  1px 1px 1px 1px #16a085;
+  transition: all 0.3s;
+}
+
+.todo-add-btn:hover {
+  background-color: #16a085;
+  color: #fff;
+}
+
+
+.todo-list__item {
+  position: relative;
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  font-size: 0.85em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px 80px 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #878787;
+  box-shadow:  0px 1px 1px 0px #aaa;
+}
+
+.todo-list__item--completed {
+  background-color: rgba(255,255,255, 0.3);
+  /* background-color: rgba(0, 206, 201,0.2); */
+  box-shadow: none;
+  color: #878787;
+  /* border: none; */
+}
+
+.delete-button,
+.toggle-button,
+.delete-all-btn,
+.todo-add-btn {
+  cursor: pointer;
+}
+
+.delete-button:focus,
+.toggle-button:focus {
+  outline: none;
+}
+
+.delete-button,
+.toggle-button {
+  position: absolute;
+  font-size: 22px;
+  /* height: 100%; */
+  top: 0;
+  height: 42px;
+  background-color: transparent;
+  border: none;
+}
+
+.toggle-button {
+  right: 0;
+  color: #50C7AF;
+}
+
+.delete-button {
+  right: 40px;
+  color: #bbb;
+}
+
+.delete-button:hover {
+  color: tomato;
+}
+
+.delete-all-btn {
+  display: none;
+  width: 100%;
+  font-size: 1em;
+  color: #fff;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: rgba(231, 76, 60,0.7);
+  border: 2px solid rgba(231, 76, 60,1.0);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.delete-all-btn:hover {
+  background-color: rgba(231, 76, 60,1.0);
+}
