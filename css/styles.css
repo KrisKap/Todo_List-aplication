@@ -6,7 +6,7 @@
 body {
   font-family: sans-serif;
   padding-top: 30px;
-  background-image: url('images/background.png');
+  background-image: url('../images/background.png');
 }
 
 .container {

@@ -82,9 +82,8 @@ var view = {
       todoLi.className = 'todo-list__item'
       todoUl.appendChild(todoLi);
       // Creating and displaying delete button for every todo li item
-      var deleteTodo = document.createElement('button')
-      // deleteTodo.textContent = 'Delete';
-      deleteTodo.innerHTML = '<i class="fas fa-trash-alt"></i>'
+      var deleteTodo = document.createElement('button');
+      deleteTodo.innerHTML = '<i class="fas fa-trash-alt"></i>';
       deleteTodo.className += 'delete-button';
       deleteTodo.id = i;
       deleteTodo.setAttribute('title', 'delete todo');
